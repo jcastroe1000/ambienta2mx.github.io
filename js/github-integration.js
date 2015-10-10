@@ -4,8 +4,9 @@ $(document).ready(function(){
      $.getJSON("https://api.github.com/orgs/Ambienta2MX/events", function(json) {
        if (json.message != "Not Found"){
          var output = "<table class='table table-hover table-striped'><tr><th>Evento</th><th>Realizado por</th><th>Módulo</th><th>Fecha</th></tr>";
-         for( i = 0; i < 10 ; i++){
-           //if(json[i].actor.login == 'jresendiz27' || json[i].actor.login == 'egjimenezg'){
+         var limit = 8;
+         for( i = 0; i < limit ; i++){
+           if(json[i].repo.name != "Ambienta2MX/ambienta2mx.github.io"){
              switch (json[i].type) {
               case "CommitCommentEvent":
                 output += "<tr><td>Commented a commit. <i>\""+json[i].payload.comment.body+"\"</i>";
@@ -91,7 +92,9 @@ $(document).ready(function(){
              }
              output +="</td><td><a href='"+json[i].actor.url.replace('api.','').replace('users/','')+"'>"+
              json[i].actor.login+"</a></td><td><a href='"+json[i].repo.url.replace('api.','').replace('repos/','')+"'>"+json[i].repo.name.replace('Ambienta2MX/','')+"</a></td><td>"+new Date(json[i].created_at).toLocaleString()+"</td></tr>";
-          //}
+           } else {
+             limit += 1;
+           }
          }
          output += "</table>";
          $('#last-events').html(output);
