@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ambienta2MX</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/simple-sidebar.css" rel="stylesheet">
+    <link href="../css/carousel.css" rel="stylesheet">
+
+    <script src="./js/ie-emulation-modes-warning.js"></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+         <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../index.html">
+                        Ambienta2MX
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">¿Qué es Ambienta2MX?</a>
+                </li>
+                <li>
+                    <a href="../objetives.html">Objetivo</a>
+                </li>
+                <li>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toogle"
+                               data-toggle="collapse" data-parent="#leftMenu"
+                               href="#collapseTwo">
+                                Trabajo Terminal 1
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse"
+                            style="height: 0px;">
+                            <div class="accoridion-inner">
+                                <ul>
+                                    <li><a href="../tt1/terminal_work_1.html">TT 1</a></li>
+                                    <li><a href="../tt1/Smart_Owl.html">SmartOwl</a></li>
+                                    <li><a href="../tt1/Fast _Eagle.html">FastEagle</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toogle"
+                               data-toggle="collapse" data-parent="#leftMenu"
+                               href="#collapseThree">
+                                Trabajo Terminal 2
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse"
+                            style="height: 0px;">
+                            <div class="accoridion-inner">
+                                <ul>
+                                    <li><a href="../tt2/terminal_work_2.html"> TT 2</a></li>
+                                    <li><a href="../tt2/Friendly_Dolphin.html"> FriendlyDolphin</a></li>
+                                    <li><a href="../tt2/CuteBunny.html">CuteBunny</a></li>
+                                    <li><a href="../tt2/Hard_Ant.html">Hard Ant</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <a href="../inprogress.html">Trabajo en progreso</a>
+                </li>
+                <li>
+                    <a href="../links.html">Enlaces</a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 style="text-align: center"> Módulo Hard Ant</h1>
+                        <br>
+                        <p style="text-align: justify">
+                            Hard Ant es uno de los bloques funcionales base de Ambienta2MX, su función
+                            principal es la de enrutar las peticiones a las bases de tipo MX además de brindar la solución cartográfica (a nivel ubicación) interactuando con Fast Eagle.
+                        </p>
+                        <p style="text-align: justify">
+                            Como complemento a la arquitectura, también contará con el proceso del registro masivo de información, exponiendo servicios que el módulo Smart Owl usará de
+                            forma constante para persistir la información estandarizada de diversas fuentes de información.
+                        </p>
+                        <p style="text-align: justify">
+                            Hard Ant brindará los canales de acceso a las bases MX definidas en el diagrama
+                            general mediante servicios HTTP, estos servicios brindarán información para el
+                            proceso de inserción y extracción de la información.
+                        </p>
+                        <p style="text-align: justify">
+                        Este módulo es lo que sería considerado la capa del modelo de datos en un patrón    MVC, ya que es la que tiene contacto de forma directa con los datos almacenados
+                        en las bases de datos orientadas a documentos gestionadas por Mongo.
+                        </p>
+                        <p style="text-align: justify">
+                        Se utilizará un pool de conexiones a la base para garantizar el acceso o escritura a los datos además de brindar la posibilidad de respuestas asincronas y no
+                        bloqueantes entre las consultas realizadas.
+                        </p>
+                        <br>
+                        <div style="padding-left: 230px;"><img src="../image/hard_ant.jpg" height="300" width="600"></div>
+                        <h6 style="text-align: center">Diagrama General del Módulo Hard Ant</h6>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../js/holder.min.js"></script>
+    <!-- IE10 view.port hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
+</body>
+
+</html>

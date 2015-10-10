@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ambienta2MX</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/simple-sidebar.css" rel="stylesheet">
+        <link href="../css/carousel.css" rel="stylesheet">
+
+        <script src="./js/ie-emulation-modes-warning.js"></script>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+             <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../index.html">
+                        Ambienta2MX
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">¿Qué es Ambienta2MX?</a>
+                </li>
+                <li>
+                    <a href="../objetives.html">Objetivo</a>
+                </li>
+                <li>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toogle"
+                               data-toggle="collapse" data-parent="#leftMenu"
+                               href="#collapseTwo">
+                                Trabajo Terminal 1
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse"
+                            style="height: 0px;">
+                            <div class="accoridion-inner">
+                                <ul>
+                                    <li><a href="../tt1/terminal_work_1.html">TT 1</a></li>
+                                    <li><a href="../tt1/Smart_Owl.html">SmartOwl</a></li>
+                                    <li><a href="../tt1/Fast _Eagle.html">FastEagle</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toogle"
+                               data-toggle="collapse" data-parent="#leftMenu"
+                               href="#collapseThree">
+                                Trabajo Terminal 2
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse"
+                            style="height: 0px;">
+                            <div class="accoridion-inner">
+                                <ul>
+                                    <li><a href="../tt2/terminal_work_2.html"> TT 2</a></li>
+                                    <li><a href="../tt2/Friendly_Dolphin.html"> FriendlyDolphin</a></li>
+                                    <li><a href="../tt2/CuteBunny.html">CuteBunny</a></li>
+                                    <li><a href="../tt2/Hard_Ant.html">Hard Ant</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <a href="../inprogress.html">Trabajo en progreso</a>
+                </li>
+                <li>
+                    <a href="../links.html">Enlaces</a>
+                </li>
+
+            </ul>
+        </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 style="text-align: center">Módulo Cute Bunny</h1>
+                            <p style="text-align: justify">
+                                El módulo Cute Bunny es parte medular para la comunicación con otros sistemas.
+                                Cute Bunny es el encargado de proporcionar los respectivos servicios
+                                de tipo REST a otros sistemas o módulos que deseen consultar la información
+                                almacenada en las respectivas bases de tipo MX.</p>
+                            <p style="text-align: justify">La información de variables ambientales e índices de contaminación y calidad del
+                                aire, será expuesta por medio de peticiones HTTP que siguen un patrón “Conv
+                                over Conf”, es decir, sigue la misma estructura que otros sitemas y frameworks
+                                de desarrollo web, esto facilitará que aquellos desarrolladores y analistas que
+                                deseen acceder de forma programática no tengan que realizar demasiadas configuraciones
+                                y se adapten de forma orgánica al sistema.</p>
+                            <br>
+                            <div style="padding-left: 340px"><img src="../image/tablacute.jpg" height="250" width="350"></div>
+                            <h6 style="text-align: center">Tabla de peticiones a Cute Bunny</h6>
+                            <br>
+                            <br>
+                            <br>
+
+                            <p style="text-align: justify">
+                                Considerando la naturaleza del sistema, que es primordialmente de consultas y
+                                extracción de información de servicios externos, no es necesario contar con una
+                                extensa lógica de negocio. El núcleo de la aplicación será la exposición de datos
+                                y seguir la convención de servicios REST, considerando algunos ejemplos como
+                                los que muestra el siguiente diagrama.
+                            </p>
+                            <p style="text-align: justify">
+                                Cute Bunny interactua con otros dos módulos de Ambienta2MX, Smart Owl y
+                                Hard Ant. La interacción con estos surge debido a que Hard Ant es el encargado
+                                de gestionar el acceso a las bases de datos de tipo MX y Smart Owl brindará
+                                y dará solución a las busquedas que no se encuentren en las bases de tipo MX,
+                                es decir, tratará de encontrar la información que Cute Bunny le solicitó para
+                                guardarla en algunas de las bases y posteriormente regresar el resultado al
+                                solicitante.
+                            </p>
+                            <div style="padding-left: 200px;"><img src="../image/diagrama_cute_bunny.jpg" width="600" height="300" ></div>
+                            <h6 style="text-align: center">Diagrama General de Cute Bunny</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+        <script src="../js/holder.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
+    </body>
+
+</html>

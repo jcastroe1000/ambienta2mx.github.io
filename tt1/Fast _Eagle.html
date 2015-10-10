@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ambienta2MX</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/simple-sidebar.css" rel="stylesheet">
+        <link href="../css/carousel.css" rel="stylesheet">
+        <script src="./js/ie-emulation-modes-warning.js"></script>
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+             <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../index.html">
+                        Ambienta2MX
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">¿Qué es Ambienta2MX?</a>
+                </li>
+                <li>
+                    <a href="../objetives.html">Objetivo</a>
+                </li>
+                <li>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toogle"
+                               data-toggle="collapse" data-parent="#leftMenu"
+                               href="#collapseTwo">
+                                Trabajo Terminal 1
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse"
+                            style="height: 0px;">
+                            <div class="accoridion-inner">
+                                <ul>
+                                    <li><a href="../tt1/terminal_work_1.html">TT 1</a></li>
+                                    <li><a href="../tt1/Smart_Owl.html">SmartOwl</a></li>
+                                    <li><a href="../tt1/Fast _Eagle.html">FastEagle</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toogle"
+                               data-toggle="collapse" data-parent="#leftMenu"
+                               href="#collapseThree">
+                                Trabajo Terminal 2
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse"
+                            style="height: 0px;">
+                            <div class="accoridion-inner">
+                                <ul>
+                                    <li><a href="../tt2/terminal_work_2.html"> TT 2</a></li>
+                                    <li><a href="../tt2/Friendly_Dolphin.html"> FriendlyDolphin</a></li>
+                                    <li><a href="../tt2/CuteBunny.html">CuteBunny</a></li>
+                                    <li><a href="../tt2/Hard_Ant.html">Hard Ant</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </li>
+                <li>
+                    <a href="../inprogress.html">Trabajo en progreso</a>
+                </li>
+                <li>
+                    <a href="../links.html">Enlaces</a>
+                </li>
+
+            </ul>
+        </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 style="text-align: center">Módulo Fast Eagle</h1><br>
+                            <p style="text-align: justify">
+                                El módulo Fast Eagle formará parte de la arquitectura final de Ambienta2MX.
+                                El propósito principal de este módulo es brindar la información cartográfica
+                                de México por medio de un servicio expuesto, considerando latitud, longitud o
+                                nombre de la localidad deseada.
+                            </p>
+                            <p style="text-align: justify">
+                                Fast Eagle se encargará de la lectura, carga, verificación y resolución de los
+                                archivos brindados por el (Instituto Nacional de Estadística y Geografía) INEGI
+                                en la información pública que tiene de la cartografía del territorio nacional.
+                            </p>
+                            <p style="text-align: justify">
+                                El proceso de toma de datos del INEGI será ejecutado sólo una vez al inicio o
+                                primer despliegue del sistema. Esto debido a que la cartografía no deberá ser
+                                procesada de forma dinámica. Se usará un modelo de datos persistido Mongo
+                                para sus posteriores consultas.
+                            </p>
+                            <p style="text-align: justify">
+                                La información que proporciona el INEGI carece de campos esenciales para la
+                                estandarización de los información cartográfica, para dar solución a ese contratiempo
+                                se hará uso de servicios externos que ya cuentan con información definida,
+                                es decir, que su información ha pasado bajo un cierto proceso de limpieza y
+                                regulación, por ejemplo, los servicios de Google Places API.
+                            </p>
+                            <p style="text-align: justify">
+                                En caso de que no exista la información deseada por el usuario o algún otro
+                                módulo del sistema en la cartografía (base de datos llamada Places), Fast Eagle
+                                tratará de resolver la información en fuentes externas, persistiendo el modelo
+                                resuelto y regresando esa información al solicitante.
+                            </p>
+                            <br>
+                            <br>
+                            <div style="text-align: center">
+                              <img src="../image/diagrama_secuencias_fast_eagle.jpg" width="650em" >
+                              <h6>Diagrama de secuencias</h6>
+                            </div>
+                            <br>
+                            <br>
+                            <div style="text-align: center">
+                              <img src="../image/diagrama_fast_Eagle.jpg" width="650em" >
+                              <h6>Diagrama general de FastEagle</h6>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+        <script src="../js/holder.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+
+    </body>
+
+</html>
